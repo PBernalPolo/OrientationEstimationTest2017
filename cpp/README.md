@@ -10,6 +10,8 @@ The test is performed in different orientation estimation algorithms:
 - OrientationEstimator > MUKF > MUKFcMRP
 - OrientationEstimator > MUKF > MUKFcRV
 - OrientationEstimator > MadgwickAHRS
+Some configuration parameters are defined in
+- config.h
 
 The test is implemented in:
 - OE_Tester
