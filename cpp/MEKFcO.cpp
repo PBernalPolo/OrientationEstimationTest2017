@@ -86,7 +86,7 @@ void MEKFcO::chartUpdateMatrix( double* delta , double* G ){
   G[2] = delta[2];     G[5] = -delta[1];    G[8] = delta[0];
   
   for(int i=0; i<3; i++){
-    for(int j=0; j<3; j++) G[i+j*3] -= delta[i+1]*delta[j+1]/delta[0];
+    for(int j=0; j<3; j++) G[i+j*3] += delta[i+1]*delta[j+1]/delta[0];
   }
   
   return;
