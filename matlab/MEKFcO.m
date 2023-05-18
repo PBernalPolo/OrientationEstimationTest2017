@@ -61,7 +61,7 @@ classdef MEKFcO < MEKF
     function G = chartUpdateMatrix( delta )
         G = [ delta(4)   delta(3)  -delta(2);
              -delta(3)   delta(4)   delta(1);
-              delta(2)  -delta(1)   delta(4)] - delta(1:3)*delta(1:3)'/delta(4);
+              delta(2)  -delta(1)   delta(4)] + delta(1:3)*delta(1:3)'/delta(4);
     end
     
   end
